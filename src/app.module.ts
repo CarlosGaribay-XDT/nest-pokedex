@@ -8,9 +8,9 @@ import { SeedModule } from './seed/seed.module';
 @Module({
   imports: [
     PokemonModule,
+    SeedModule,
     MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon'),
-    CommonModule,
-    SeedModule],
+    CommonModule],
   controllers: [],
   providers: [],
 })
